@@ -110,20 +110,19 @@ nav ul li a:hover{
 		}
 
 		.snap-img{
-			max-width: 100%;
+			min-width: 100%;
 			height: auto;
 		}
 
+		body{
+			background-color: blue!important;
+		}
 	 }
 
 	/* Small devices (landscape phones, 576px and up) */
 	@media (min-width: 576px) { 
 		h1{
 			font-size: 10rem!important;
-		}
-
-		body{
-			background-color: red!important;
 		}
 	 }
 	
@@ -137,6 +136,11 @@ nav ul li a:hover{
 			min-width: auto!important;
 			padding: auto!important; 
 			margin: auto!important;
+		}
+
+		.snap-img{
+			min-width: none;
+			height: auto;
 		}
 	 }
 	
