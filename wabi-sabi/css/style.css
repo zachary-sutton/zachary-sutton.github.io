@@ -101,12 +101,23 @@ nav ul li a:hover{
 		.mob-pad{
 			padding-top: 1rem;
 		}
+
+		.portrait{
+			height: auto;
+		}
+
+		body{
+			background-color: red!important;
+		}
 	 }
 
 	/* Small devices (landscape phones, 576px and up) */
 	@media (min-width: 576px) { 
 		h1{
 			font-size: 10rem!important;
+		}
+		body{
+			background-color: white!important;
 		}
 	 }
 	
