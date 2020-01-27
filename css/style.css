@@ -1,310 +1,134 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@font-face{font-family: higher; src: url('../fonts/Higher.ttf');}
 
 /* LANDING */
-.landing{
-	height: 100vh;
-	width: 100%;
-	left: 0;
-	right: 0;
-	overflow: hidden;
-	background: url(../img/landing.gif);
-	background-position: center;
-	font-family: 'Bebas Neue', cursive;
-
-
+h1{
+	font-family: higher;
+	font-size: 20rem!important;
 }
 
-.landing h1{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	text-align: center;
-	font-size: 5rem;
+h5{
+	font-family: higher;
 }
 
-.landing h1 span{
-	color: #66fcf1;
+/* NAV */
+.to-top-btn{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 100;
+	color: #282923;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 25px;
+	padding: .5rem;
 }
 
-/* NAV BAR */
 nav{
-	background: #1f2833;
-	border-bottom: 5px solid #66fcf1;
+	background: white !important;
+	
 }
 
 nav ul li a{
-	color: white !important;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.5rem;
+	color: 	#282923!important;
 }
-
-nav ul li a.active{
-	color: #cb2d6f !important;
-}
-
 
 nav ul li a:hover{
-	color: #cb2d6f !important;
+	color: #838383!important;
 }
 
-.navbar-brand{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.5rem !important;
-	margin: auto;
-	color: #cb2d6f !important;
+#nav nav button{
+	border: 1px solid #7f7f7f;
 }
 
-.sticky {
-	position: fixed;
+.navbar-toggler-icon{
+	color: red!important;
+}
+
+/* EVENTS */
+.events-wrap img{
 	width: 100%;
-	left: 0;
-	top: 0;
-	z-index: 100;
-	border-top: 0;
+	padding: 0;
+}
+/* SNAPS */
+/* MEDIA */
+/* SOUNDCLOUD */
+.soundcloud, .spotify, .fb, .instagram, .twitter {
+	text-decoration: none!important;
+	color: #212529;
+}
+
+.soundcloud:hover{
+	text-decoration: none!important;
+	color: #ff6b00;
+	
+}
+.spotify:hover{
+	text-decoration: none!important;
+	color: #23d061;
+	
+}
+
+.fb:hover{
+	text-decoration: none!important;
+	color: #4267b2;
+	
+}
+
+.instagram:hover{
+	text-decoration: none!important;
+	color: #d53e91;
+	
+}
+
+.twitter-square:hover{
+	text-decoration: none!important;
+	color: #1da1f2;
+	
 }
 
 /* ABOUT */
-#about div h2{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 5rem;
-}
+#about h3{
+		font-size: 5rem;
+		font-family: higher;
+	}
 
-#about div h3{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 3rem;
+	/* Stupidly small devices that maybe don't exist */
+	@media (min-width: 0px) { 
+		h1{
+			font-size: 8rem!important;
+		}
 
-}
+		.mob-pad{
+			padding-top: 1rem;
+		}
 
-#about div div h5{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.7rem;
-}
+		body{
+			background-color: purple!important;
+		}
+	 }
 
-#about div div p{
-	margin-bottom: 0px !important;
-	font-style: italic;
-
-}
-
-#about div div p b{
-	text-transform: uppercase;
+	/* Small devices (landscape phones, 576px and up) */
+	@media (min-width: 576px) { 
+		h1{
+			font-size: 10rem!important;
+		}
+		body{
+			background-color: white!important;
+		}
+		.portrait{
+			min-height: 100%;
+		}
+	 }
 	
-}
-.about-color{
-	color: #cb2d6f;
-}
-
-
-hr.hrabout{
-	border-top: 4px solid black;
-	width: 20%;
-}
-
-.row img{
-	border-radius: 15px 100px;
-	border: 8px solid #1f2833;
-	height: 40vh;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.img-center{
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.hover-color{
-	color: #cb2d6f;
-}
-
-/* SKILLS */
-
-#skills{
-	background: #1f2833;
-	color: white;
-}
-
-#skills div h2{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 5rem;
-}
-
-hr.hrskills{
-	border-top: 4px solid white;
-	width: 15%;
-}
-
-/* PROJECTS */
-#projects div h2{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 5rem;
-}
-
-#projects div h3{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 2.5rem;
-	color: white;
-	background: black;
-
-}
-
-.text-wrap{
-	color: white;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.text-wrap p{
-	background: black;
-}
-
-.project1{
-	background: url(../img/ale-house.png);
-	border: 1px solid black;
-	background-position: center;
-	height: 30vh;
-	background-size: 400px;
-	background-position: center;
-}
-
-.project1:hover{
-	background-size: 600px;
-
-}
-
-.project2{
-	background: url(../img/bsf.png);
-	background-position: center;
-	height: 30vh;
-	background-size: 400px;
-	background-position: center;
-}
-
-.project2:hover{
-	background-size: 600px;
-
-}
-
-.project3{
-	background: url(../img/wabi-sabi.png);
-	border: 1px solid black;
-	background-position: center;
-	height: 30vh;
-	background-size: 400px;
-	background-position: center;
-}
-
-.project3:hover{
-	background-size: 600px;
-
-}
-
-.div-link{ 
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
-}
-/* CONTACT */
-
-#contact{
-	background: #131518;
-}
-
-hr.hrcontact{
-	border-top: 5px solid white;
-	width: 20%;
-}
-
-.linkedin{
-	color: white !important;
-}
-
-.linkedin:hover{
-	color: #cb2d6f !important;
-}
-
-#contact div h2{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 5rem;
-	color: white;
-}
-
-#contact div p{
-	color: white;
-
-}
-
-button{
-	color: white !important;
-	border: 1px solid white !important;
-}
-
-.form-group div button:hover{
-	background: #cb2d6f;
-}
-
-/* FOOTER */
-footer{
-	background: red;
-	background: /*#131518;*/ #232429;
-}
-
-hr.hrfooter{
-	width: 90%;
-	border-top: 1px solid white;
-}
-
-footer h5{
-	color: white;
-	font-family: 'Bebas Neue', cursive;
-}
-
-/* Extra small devices (portrait phones, less than 576px)
- No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 577px) { 
-	.landing h1 {
-		font-size: 3.5rem!important;
-	}	
- }
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 769px) { 
-	.navbar-brand{
-		margin-left: 10px;
-	}
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 993px) { 
-	.md-padding{
-		padding-bottom: 2rem;
-	}
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1201px) { 
-	.lg-padding{
-		padding-bottom: 2rem;
-	}
-
-	.img-center{
-		position: relative;
-	}
-
-	div h3, p, h5 {
-		text-align: center;
-	}
-}
+	/* Medium devices (tablets, 768px and up) */
+	@media (min-width: 768px) { 
+		h1{
+			font-size: 20rem!important;
+		}
+	 }
+	
+	/* Large devices (desktops, 992px and up) */
+	@media (min-width: 992px) {  }
+	
+	/* Extra large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) {  }
