@@ -104,6 +104,7 @@ nav ul li a:hover{
 
 		.mob-img{
 			min-width: 100%!important;
+			height: auto;
 			padding: 0!important;
 			margin: 0!important;
 		}
