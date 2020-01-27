@@ -2,8 +2,6 @@ $(document).ready(function() {
 	//home
 	$("#home-nav").click(function(){
 
-        alert("hello");
-
 	    function scrollToAnchor(aid){
 		    var aTag = $("[id='"+ aid +"']");
 		    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
@@ -51,4 +49,6 @@ $(document).ready(function() {
 
 	scrollToAnchor('contact-section');
 	});
+
 });
+

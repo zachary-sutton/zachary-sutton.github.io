@@ -2,6 +2,13 @@
 html, body {
 	overflow-x: hidden;
 }
+
+@font-face{font-family: "roboto"; src: url(../fonts/Roboto-Medium.ttf);}
+
+p{
+	font-family: "roboto";
+}
+
 /* Throughout CSS */
 .center-stuff{
 	text-align: center;
@@ -61,13 +68,13 @@ nav{
 /* Landing CSS*/
 
 .landing{
-	background-image: url("../images/ale-house.jpg");
-	height: 100vh;
-	width: 100%;
-	left: 0;
-	right: 0;
-	background-position: center;
-}
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/ale-house.jpg');
+		height: 100vh;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 .landing-content{
 	position: relative;
@@ -124,7 +131,7 @@ nav{
 }
 
 .jumbotron div h1{
-	font-family: 'Shadows Into Light', cursive;
+	font-family: 'Bebas Neue', cursive;
 	font-size: 6rem;
 }
 
@@ -152,7 +159,7 @@ nav{
 }
 
 #amenities{
-	background: #3a559f;
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/craft-bar.jpg');
 	color: white;
 }
 
@@ -171,13 +178,93 @@ nav{
 }
 
 .card{
-	background:	#1d1d1d!important;
+	background:	rgb(12, 12, 12)!important;
 	color: white!important;
+	border: 2px solid white!important;
 }
 
 .card-footer{
 	color: white!important;
 }
+
+.live-music{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/live-music.jpg');
+	background-size: 100%;
+	border-bottom: 1px solid white;
+	background-position: center;
+}
+
+.live-music:hover{
+	background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), url('../images/live-music.jpg');
+	background-size: 100%;
+	background-position: center;
+}
+
+.food-menu{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/food.jpg');
+	background-size: 100%;
+	border-bottom: 1px solid white;
+	background-position: center;
+}
+
+.food-menu:hover{
+	background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), url('../images/food.jpg');
+	background-size: 100%;
+	background-position: center;
+}
+
+.retro-games{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/games.jpg');
+	background-size: 100%;
+	border-bottom: 1px solid white;
+	background-position: center;
+}
+
+.retro-games:hover{
+	background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), url('../images/games.jpg');
+	background-size: 100%;
+	background-position: center;
+}
+
+.wifi{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/wifi.jpg');
+	background-size: 100%;
+	border-bottom: 1px solid white;
+	background-position: center;
+}
+
+.wifi:hover{
+	background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), url('../images/wifi.jpg');
+	background-size: 100%;
+	background-position: center;
+}
+
+.comedy{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/comedy.jpg');
+	background-size: 100%;
+	border-bottom: 1px solid white;
+	background-position: center;
+}
+
+.comedy:hover{
+	background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), url('../images/comedy.jpg');
+	background-size: 100%;
+	background-position: center;
+}
+
+.parking{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/parking.jpg');
+	background-size: 100%;
+	border-bottom: 1px solid white;
+	background-position: center;
+}
+
+.parking:hover{
+	background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), url('../images/parking.jpg');
+	background-size: 100%;
+	background-position: center;
+}
+
 /* Opening Hours CSS */
 #opening-hours h1{
 	font-family: 'Bebas Neue', cursive;
@@ -191,8 +278,39 @@ table {
 
 /* Review CSS*/
 #reviews{
-	background: #60909c;
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/reviews.jpg');
 	color: white;
+	background-position: center;
+}
+
+#review1{
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url('../images/review1.png');
+	background-position: center;
+}
+
+#review1:hover{
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/review1.png');
+	background-position: center;
+}
+
+#review2{
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url('../images/review2.png');
+	background-position: center;
+}
+
+#review2:hover{
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/review2.png');
+	background-position: center;
+}
+
+#review3{
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url('../images/review3.png');
+	background-position: center;
+}
+
+#review3:hover{
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/review3.png');
+	background-position: center;
 }
 
 .fa-star, .fa-star-half-alt{
@@ -207,10 +325,12 @@ table {
 
 .desktop-img{
 	display: block;
+	border: 2px solid white;
 }
 
 .mobile-img{
 	display: none;
+	border: 2px solid white;
 }
 
 /* Location CSS */
@@ -226,7 +346,8 @@ iframe{
 
 /* Conact CSS */
 #contact{
-	background: #25274D;
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/contact.jpg');
+	background-size: cover;
 	color: white;
 }
 
@@ -236,18 +357,28 @@ iframe{
 }
 /* Footer CSS */
 #footer{
-	font-family: 'Cairo', sans-serif;
-	background: #25274D;
+	font-family: 'Bebas Neue', cursive;
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/footer-bg.jpg');
+	background-position: center;
 	color: white;
-}
-
-.footer-hr{
-	width: 98%;
-	border-top: 1px black solid;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	
 }
 
 .hrstyle1{
 	border-top: 1px black solid;
+}
+
+.footer-link{
+	display: inline!important;
+
+}
+
+.footer-text{
+	font-family: 'Bebas Neue', cursive;
+	text-decoration: none;
+	color: white;
 }
 
 .footer-link, .social-icons{
@@ -255,9 +386,10 @@ iframe{
 	color: white;
 }
 
-.footer-link:hover, .social-icons:hover{
+.footer-link:hover{
 	text-decoration: none;
 	color: #b7bfc2;
+	text-decoration: underline;
 }
 
 .fa-instagram:hover{
@@ -268,7 +400,7 @@ iframe{
 }
 
 .fa-facebook-square:hover{
-	color: #3a559f!important;
+	color: #1f50d6!important;
 }
 
 /* Small devices (landscape phones, 576px and up) */
