@@ -116,7 +116,7 @@ nav ul li a:hover{
 			background-color: white!important;
 		}
 		.portrait{
-			height: auto!important;
+			height: 100vh!important;
 			width: auto!important;
 		}
 	 }
