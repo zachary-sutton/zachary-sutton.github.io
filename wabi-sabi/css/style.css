@@ -102,17 +102,8 @@ nav ul li a:hover{
 			padding-top: 1rem;
 		}
 
-		.portrait{
-			height: auto;
-			margin:auto;
-			width: 100%; 
-			max-width: 100%; 
-			height: auto;
-			object-fit: contain;
-		}
-
 		body{
-			background-color: green!important;
+			background-color: blue!important;
 		}
 	 }
 
@@ -123,6 +114,9 @@ nav ul li a:hover{
 		}
 		body{
 			background-color: white!important;
+		}
+		.portrait{
+			min-height: 100%;
 		}
 	 }
 	
