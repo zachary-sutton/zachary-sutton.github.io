@@ -103,9 +103,9 @@ nav ul li a:hover{
 		}
 
 		.mob-img{
-			max-width: 100%!important;
+			min-width: 100%!important;
 			height: auto;
-			padding: 0!important;
+			padding: 0!important; 
 			margin: 0!important;
 		}
 
@@ -130,7 +130,7 @@ nav ul li a:hover{
 
 		.mob-img{
 			min-width: auto!important;
-			padding: auto!important;
+			padding: auto!important; 
 			margin: auto!important;
 		}
 	 }
