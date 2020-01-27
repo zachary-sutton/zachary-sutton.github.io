@@ -1,176 +1,272 @@
 <!DOCTYPE html>
 <html>
-
+<title>
+	ZNS DEV &#169;
+</title>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="img/title-ico.ico">
+<script src="js/popper.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/4ca2b59b93.js" crossorigin="anonymous"></script>
 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 
-	<script type="text/javascript" src="js/popper.js"></script>
-	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/popperCode.js"></script>
-	<script type="text/javascript" src="js/navHide.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-	<script src="https://kit.fontawesome.com/4ca2b59b93.js" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
-
-<body>
-<!-- LANDING START -->
-<section id="landing">
-	<div class="text-center">
-		<h1>WABI-SABI</h1>
-		<h5>永遠に140</h5>
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+<!-- LANDING START !-->
+<section id="landing" name="landing-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="landing">
+				<h1 class="animated zoomInDown">
+					Hello, I'm <span>Zachary Sutton</span>. 
+					<br>
+					A front end web developer.
+				</h1>
+		</div>
+		</div>
 	</div>
 </section>
+<!-- LANDING END !-->
 <!-- NAV START !-->
-<section id="nav">
-		<nav class="navbar navbar-expand-md navbar-light col-12 m-auto">
-			<button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav m-auto mob-pad">
-					<li class="nav-item m-auto">
-						<a class="nav-link" id="events-nav" href="#" onclick="events()">EVENTS</a>
-					</li>
-					<li class="nav-item m-auto">
-						<a class="nav-link" id="snaps-nav" href="#" onclick="snaps()">SNAPS</a>
-					</li>
-					<li class="nav-item m-auto">
-						<a class="nav-link" id="media-nav" href="#" onclick="media()">MEDIA</a>
-					</li>
-					<li class="nav-item m-auto">
-						<a class="nav-link" href="#" onclick="soundcloud()">SOUNDCLOUD</a>
-					</li>
-					<li class="nav-item m-auto">
-						<a class="nav-link" href="#" onclick="about()">ABOUT</a>
-					</li>						
-				</ul>
-			</div>
-		</nav>
-
-		<div class="mt-2" align="center">
-			<a href="https://soundcloud.com/thewabisabiboys" target="_blank" class="soundcloud">
-				<i class="fab fa-soundcloud ml-1 mr-1"></i>
-			</a>
-			<a href="#" class="spotify">
-				<i data-toggle="tooltip" title="Coming soon" class="fab fa-spotify ml-1 mr-1"></i>
-			</a>
-			<a href="https://www.facebook.com/thewabisabiboys/" target="_blank" class="fb">
-				<i class="fab fa-facebook-square ml-1 mr-1"></i>
-			</a>
-			<a href="https://www.instagram.com/thewabisabiboys/" target="_blank" class="instagram">
-				<i class="fab fa-instagram ml-1 mr-1"></i>
-			</a>
-			<a href="#" class="twitter">
-				<i data-toggle="tooltip" title="Coming soon" class="fab fa-twitter-square ml-1 mr-1"></i>
-			</a>
+<section id="nav" class="sticky-nav">
+	<nav class="navbar navbar-expand-md navbar-dark">
+		<h2 class="navbar-brand">Zachary Sutton</h2>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link active" id="home-nav" href="#landing">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="about-nav" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="skills-nav" href="#skills">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="projects-nav" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item" >
+					<a class="nav-link" id="contact-nav" href="#contact" >Contact</a>
+				</li>
+			</ul>
 		</div>
+	</nav>
 </section>
 <!-- NAV END !-->
-
-<!-- EVENTS START !-->
-<section id="events" class="mt-3 pb-5">
-	<div class="container-fluid" align="center">
-		<div class="row events-wrap col-12 col-xl-6">
-			<img class="col-12 col-md-4 portrait" id="001" src="img/001.png">
-			<img class="col-12 col-md-4 portrait" id="002" src="img/002.png">
-			<img class="col-12 col-md-4 portrait" id="003" src="img/003.png">
-		</div>
-	</div>
-	<div class="container-fluid" align="center">
-		<div class="row events-wrap col-12 col-xl-6">
-			<img class="col-12 col-md-4 portrait" id="004" src="img/004.png">
-			<img class="col-12 col-md-4 portrait" id="005" src="img/005.png">
-			<img class="col-12 col-md-4 portrait" id="labon" src="img/labon.jpg">
-		</div>
-	</div>
-	</div>
-</section>
-<!-- EVENTS END !-->
-
-<!-- EVENTS START !-->
-<section id="snaps" class="mt-3 pb-5">
-	<div class="container-fluid" align="center">
-		<div class="row events-wrap col-12 col-xl-6">
-			<img class="col-12 col-md-4" src="img/album1.jpg">
-			<img class="col-12 col-md-4" src="img/album2.jpg">
-			<img class="col-12 col-md-4" src="img/album3.jpg">
-		</div>
-	</div>
-	<div class="container-fluid" align="center">
-		<div class="row events-wrap col-12 col-xl-6">
-			<img class="col-12 col-md-4" src="img/album4.jpg">
-			<img class="col-12 col-md-4" src="img/album5.jpg">
-			<img class="col-12 col-md-4" src="img/album6.jpg">
-		</div>
-	</div>
-	<div class="container-fluid" align="center">
-		<div class="row events-wrap col-12 col-xl-6">
-			<img class="col-12 col-md-4" src="img/album7.jpg">
-			<img class="col-12 col-md-4" src="img/album8.jpg">
-			<img class="col-12 col-md-4" src="img/album9.jpg">
-		</div>
-	</div>
-	<div class="container-fluid" align="center">
-		<div class="row events-wrap col-12 col-xl-6">
-			<img class="col-12 col-md-4" src="img/album10.jpg">
-			<img class="col-12 col-md-4" src="img/album11.jpg">
-			<img class="col-12 col-md-4" src="img/album12.jpg">
-		</div>
-	</div>
-	</div>
-</section>
-<!-- EVENTS END !-->
-
-<!-- SOUNDCLOUD START !-->
-<section id="soundcloud" class="pb-5 hidden">
-	<div class="container-fluid mt-3">
-		<div align="center">
-			<iframe class="col-12 col-xl-4"
-				width="100%"
-				height="500" 
-				scrolling="no" 
-				frameborder="no" 
-				allow="autoplay" 
-				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/481607526&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-			</iframe>
-		</div>
-	</div>
-</section>
-<!-- SOUNDCLOUD END !-->
-
-<!-- MEDIA START -->
-<section id="media" class="pb-5 hidden">
-	<div class="container-fluid mt-3">
-		<div align="center">
-			<iframe class="col-12 col-xl-6 youtube-video" 
-				Width="100%" 
-				height="500" 
-				src="https://www.youtube.com/embed/SYN_9wkS9Ps" 
-				frameborder="0" 
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-				allowfullscreen>
-			</iframe>
-		</div>
-	</div>
-</section>
-<!-- MEDIA END -->
-
 <!-- ABOUT START !-->
-<section id="about" class="mt-3 pb-5">
-	<div class="container-fluid mt-5" align="center">
-		<h3 class="mt-3 col-12">About</h3>
-		<div class="col-12 col-xl-3" align="center">
-			<p>Wabi-Sabi, born Nottingham, England is a record label and events night who's roots stem strictly from 140 & soundsystem culture. </p>
-			<p>After hosting a series of successful dances the collective has grown beyond the midlands. Look out for future evnets, releases and news by following our socials.</p>
+<section id="about" name="about-section">
+	<div class="container-fluid">
+		<h2 class="text-center mt-5 about-head">About</h2>
+		<hr class="hrabout mb-5 about-head">
+		<div class="col-md-8 m-auto text-center">
+			<div class="row mb-5">
+				<div class="col-lg-6 col-xl-3 lg-padding" id="responsive">
+					<i class="fas fa-laptop-code fa-5x mb-2" id="fade"></i>
+					<h3>Responsive</h3>
+					<p class="col-10 m-auto">Responsive web design to fit any device size. </p>
+				</div>
+				<div class="col-lg-6 col-xl-3 lg-padding" id="fast">
+					<i class="fas fa-stopwatch fa-5x mb-2"></i>
+					<h3>Fast</h3>
+					<p class="col-10 m-auto">Optimised code for fast load times and lag free interaction.</p>
+				</div>
+				<div class="col-lg-6 col-xl-3" id="intuitive">
+					<i class="far fa-lightbulb fa-5x mb-2"></i>
+					<h3>Intuitive</h3>
+					<p class="col-10 m-auto pb-4">Intuitive design with easy to use, user friendly UX/UI.</p>
+				</div>
+				<div class="col-lg-6 col-xl-3" id="love">
+					<i class="far fa-heart fa-5x mb-2"></i>
+					<h3>Built With Love</h3>
+					<p class="col-10 m-auto">Each build unique with your best interest in mind.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 col-xl-8 m-auto">
+			<div class="row mb-5" id="about-body">
+				<div class="col-md-12 col-xl-6">
+					<img class="img-center" src="img/me.jpg">
+				</div>
+				<div class="col-md-12 col-xl-6 m-auto" >
+					<hr>
+					<h3> Zachary Sutton</h3>
+					<p>Yorkshire born, with a passion for technology and software. I am a front end developer who is currently seeking full time employment in one of the UK's major cities.</p>
+					<hr>
+					<h5>Experience</h5>
+					<p><b>Victoria Business Center:</b> Web Developer & Digital Designer </p>
+					<p> Sept 2018 - Nov 2019</p>
+					<p><b>FTA Furnishing:</b> Web Developer & Digital Designer </p>
+					<p> Sept 2017 - Sept 2018</p>
+					<p><b>Nottingham Trent University:</b> Digital Media Technology BSc(Hons) - 2:1  </p>
+					<p> Oct 2012 - Jul 2016</p>
+					<hr>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 <!-- ABOUT END !-->
+<!-- SKILLS START -->
+<section id="skills" name="skills-section" class="span-mar">
+	<div class="container-fluid skills">
+		<h2 class="text-center pt-5 bounce">Skills</h2>
+		<hr class="hrskills mb-5">
+		<div class="col-md-10 m-auto text-center">
+			<div class="row mb-5">
+				<div class="col-md-6 col-xl-3 md-padding" id="html-skill">
+					<i class="fab fa-html5 fa-8x"></i>
+					<h3>HTML5</h3>
+					<p class="col-md-8 m-auto">8 Years experience with HTML programming.</p>
+				</div>
+				<div class="col-md-6 col-xl-3 md-padding" id="css-skill">
+					<i class="fab fa-css3-alt fa-8x"></i>
+					<h3>CSS3</h3>
+					<p class="col-md-8 m-auto">Styling my HTML using the latest CSS.</p>
+				</div>
+				<div class="col-md-6 col-xl-3 pb-4" id="js-skill">
+					<i class="fab fa-js-square fa-8x"></i>
+					<h3>JS & jQuery</h3>
+					<p class="col-md-8 m-auto">Web pages made dynamic using jQuery & JavaScript.</p>
+				</div>	
+				<div class="col-md-6 col-xl-3" id="react-skill">
+					<i class="fab fa-react fa-8x"></i>
+					<h3>React JS</h3>
+					<p class="col-md-8 m-auto">Dynamic single page web application developement using React JS</p>
+				</div>			
+			</div>
+		</div>	
+		<div class="col-md-10 m-auto text-center pb-5">
+			<div class="row">
+				<div class="col-md-6 col-xl-3 md-padding" id="sql-skill">
+					<i class="fas fa-database fa-8x"></i>
+					<h3>SQL</h3>
+					<p class="col-md-8 m-auto">Previous experience with MySQL</p>
+				</div>
+				<div class="col-md-6 col-xl-3 md-padding" id="php-skill">
+					<i class="fab fa-php fa-8x"></i>
+					<h3>PHP</h3>
+					<p class="col-md-8 m-auto">Previous experience with PHP</p>
+				</div>
+				<div class="col-md-6 col-xl-3" id="bootstrap-skill">
+					<i class="fab fa-bootstrap fa-8x"></i>
+					<h3>Bootstrap</h3>
+					<p class="col-md-8 m-auto">Use of Bootstrap 4, for responsive development</p>
+				</div>
+				<div class="col-md-6 col-xl-3" id="adobe-skill">
+					<i class="fab fa-adobe fa-8x"></i>
+					<h3>Adobe Suite</h3>
+					<p class="col-md-8 m-auto">Photoshop, Illustrator, Premiere, After Effects & Dreamweaver</p>
+				</div>				
+			</div>
+		</div>	
+	</div>
+</section>
+<!-- SKILLS END -->
+<!-- PROJECTS START -->
+<section id="projects" name="projects-section">
+	<div class="container-fluid mt-5">
+		<h2 class="text-center">Projects</h2>
+		<hr class="hrabout mb-5">
+	</div>
+	<div class="col-md-10 m-auto text-center pb-5">
+		<div class="row">
+			<div class="col-md-4 project1">
+				<a class="div-link" href="ale-house/index.html" target="_blank">
+					<div class="text-wrap">
+						<h3>ALE HOUSE</h3>
+						<p>HTML, CSS, Bootstrap, jQuery</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 project2">
+				<a class="div-link" href="bridlington-street-food/index.html" target="_blank">
+					<div class="text-wrap">
+					<h3>BSF</h3>
+					<p>HTML, CSS, Bootstrap, jQuery</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 project3">
+				<a class="div-link" href="wabi-sabi/index.html" target="_blank">
+					<div class="text-wrap">
+						<h3>WABI-SABI</h3>
+						<p>HTML, CSS, Bootstrap, jQuery</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- PROJECTS END -->
+<!-- CONTACT START !-->
+<section id="contact" class="mt-5" name="contact-section">
+	<div class="container-fluid">
+		<div class="col-md-10 m-auto text-center">
+			<h2 class="text-center pt-5">Contact</h2>
+			<hr class="hrcontact">
+			<a href="https://www.linkedin.com/in/z-sutton/" target="_blank"><i class="fab fa-linkedin m-auto fa-3x linkedin" data-toggle="tooltip" title="Visit me on LinkedIn" data-placement="right"></i></a>
+			<p>Lets get connected..</p>
+		</div>
+		<form class="form-horizontal col-md-4 m-auto pb-5" action="#">
+			<div class="form-group">
+				<div>
+					<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+				</div>
+			</div>
+			<div class="form-group">
+				<div>
+					<input type="email" class="form-control" id="email" placeholder="Email" name="email">
+				</div>
+			</div>
+			<div class="form-group">
+				<div>
+					<textarea type="text" class="form-control" id="message" placeholder="Your Message" name="message" rows="5"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<div>
+					<button type="submit" class="btn text-center col-12" data-toggle="tooltip" title="Fire away!" data-placement="bottom">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+<!-- CONTACT END !-->
+
+<!-- FOOTER START !-->
+<section id="footer">
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<hr class="hrfooter">
+					<h5 class="text-center">ZNS DEV 2019 &#169;</h5>
+				<div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!-- FOOTER END !-->
 </body>
+
+<script>
+	//tooltip jQuery
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
 </html>
