@@ -1,0 +1,135 @@
+@font-face{font-family: higher; src: url('../fonts/Higher.ttf');}
+
+/* LANDING */
+h1{
+	font-family: higher;
+	font-size: 20rem!important;
+}
+
+h5{
+	font-family: higher;
+}
+
+/* NAV */
+.to-top-btn{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 100;
+	color: #282923;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 25px;
+	padding: .5rem;
+}
+
+nav{
+	background: white !important;
+	
+}
+
+nav ul li a{
+	color: 	#282923!important;
+}
+
+nav ul li a:hover{
+	color: #838383!important;
+}
+
+#nav nav button{
+	border: 1px solid #7f7f7f;
+}
+
+.navbar-toggler-icon{
+	color: red!important;
+}
+
+/* EVENTS */
+.events-wrap img{
+	width: 100%;
+	padding: 0;
+}
+/* SNAPS */
+/* MEDIA */
+/* SOUNDCLOUD */
+.soundcloud, .spotify, .fb, .instagram, .twitter {
+	text-decoration: none!important;
+	color: #212529;
+}
+
+.soundcloud:hover{
+	text-decoration: none!important;
+	color: #ff6b00;
+	
+}
+.spotify:hover{
+	text-decoration: none!important;
+	color: #23d061;
+	
+}
+
+.fb:hover{
+	text-decoration: none!important;
+	color: #4267b2;
+	
+}
+
+.instagram:hover{
+	text-decoration: none!important;
+	color: #d53e91;
+	
+}
+
+.twitter-square:hover{
+	text-decoration: none!important;
+	color: #1da1f2;
+	
+}
+
+/* ABOUT */
+#about h3{
+		font-size: 5rem;
+		font-family: higher;
+	}
+
+	/* Stupidly small devices that maybe don't exist */
+	@media (min-width: 0px) { 
+		h1{
+			font-size: 8rem!important;
+		}
+
+		.mob-pad{
+			padding-top: 1rem;
+		}
+
+		body{
+			background-color: pink!important;
+		}
+	 }
+
+	/* Small devices (landscape phones, 576px and up) */
+	@media (min-width: 576px) { 
+		h1{
+			font-size: 10rem!important;
+		}
+		body{
+			background-color: white!important;
+		}
+		.portrait{
+			height: auto!important;
+			width: auto!important;
+		}
+	 }
+	
+	/* Medium devices (tablets, 768px and up) */
+	@media (min-width: 768px) { 
+		h1{
+			font-size: 20rem!important;
+		}
+	 }
+	
+	/* Large devices (desktops, 992px and up) */
+	@media (min-width: 992px) {  }
+	
+	/* Extra large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) {  }
