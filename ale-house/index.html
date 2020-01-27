@@ -1,0 +1,462 @@
+<!DOCTYPE html lang="en">
+<title>The Ale House</title>
+<head>
+	<!-- defines the char set to be used for the web page !-->
+	<meta charset="UTF-8"> 
+	<!-- set width of page to match screen width of device, sets zoom level when page is first loaded !-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<!-- import my style sheet !-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- import jQuery, this is needed for Bootstrap to work and must be imported first !-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- import js for amenities slide !-->
+	<script src="js/amenities.js"></script>
+	<!-- import Popper js !-->
+	<script src="js/popper.js"></script>
+	<!-- import Bootstrap js !-->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- import nav js !-->
+	<script src="js/test.js"></script>
+	<!-- import Bootstrap css !-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- import Font Awesome icons !-->
+	<script src="https://kit.fontawesome.com/4ca2b59b93.js" crossorigin="anonymous"></script>
+	<!-- import font families !-->
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+
+</head>
+
+	<!-- set Bootstraps data spy to operate based on an element with id navbarResponsive (navbarResponsive is a Bootstrap framework ID and must be used, cannot use custom id) !-->
+<body data-spy="scroll" data-target="#navbarResponsive">
+		<!-- Nav start !-->
+		<!-- BS class for navbar, navbar expands at md screen sizes, colour of nav, text/content colour !-->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+			<!-- navbar-brand is for a logo in the nav bar !-->
+			<a class="navbar-brand" href="#home">
+				<img class="rounded-circle logo" src="images/logo.jpg">
+			</a>
+			<!-- navbar-toggler is the styling for the button, data-toggle - says the data us going to be hidden/togglable - collpase is the type that was chosen, data-target is the id of what is to be hidden/toggled !-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<!-- adds the hamburger icon to the button used for dropdown menu  !-->
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- collapse class hides the content initially, ???  !-->
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto nav-bg">
+					<li class="nav-item nav-pad-left" id="home-nav">
+						<a class="nav-link" href="#home">home</a>
+					</li>
+					<li class="nav-item mobile-pad">
+						<a class="nav-link" id="ales-nav" href="#ales">ales</a>
+					</li>
+					<li class="nav-item mobile-pad">
+						<a class="nav-link" href="#amenities">amenities</a>
+					</li>					
+					<li class="nav-item mobile-pad">
+						<a class="nav-link" href="#opening-hours">opening times</a>
+					</li>
+					<li class="nav-item mobile-pad">
+						<a class="nav-link" href="#reviews">reviews</a>
+					</li>	
+					<li class="nav-item mobile-pad">
+						<a class="nav-link" href="#location">location</a>
+					</li>
+					<li class="nav-item mobile-pad">
+						<a class="nav-link" href="#contact">contact</a>
+					</li>											
+				</ul>
+			</div>
+		</nav>
+		<!-- Nav end !-->
+
+		<!-- Landing start !-->
+		<section id="home" name="landing-section">
+			<!--<div id="demo" class="carousel slide" data-ride="carousel">
+
+				 Carousel menu
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+  
+				The slideshow
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/ale-house.jpg" alt="Ale House">
+						<div class="carousel-caption">
+							<h1>The Ale House</h1>
+							<h4>The best IPA's served around the clock</h4>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/inside.jpg" alt="Inside Ale House">
+					</div>
+					<div class="carousel-item">
+						<img src="images/street-food.jpg" alt="New York">
+					</div>
+				</div>
+			</div> -->			
+			<div class="container-fluid" name="landing-section">
+				<div class="row">
+					<div class="landing">
+						<div class="landing-content">
+							<img class="rounded-circle landing-img" src="images/logo.jpg">
+							<h1>THE ALE HOUSE</h1>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			</div>
+		</section>
+		<!-- Landing end !-->
+		
+		<!--Ales start !-->
+		<section id="ales" name="ales-section">
+			<div class="jumbotron col-12">
+				<div>
+					<h1 class="text-center">Our Ales..</h1>
+					<h5 class="text-center pb">Served cold around the clock..</h5>
+				</div>
+				<div class="row row-padding">
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/goose.webp">
+						<h2>Goose IPA</h2>
+						<kbd>5.9%</kbd>
+						<hr>
+						<p>We've taken the traditional English Style and created our own fuller flavored IPA with bright citrus aromas and a bold hop finish.</p>
+						<hr>
+						<h4>£1.49</h4>
+					</div>	
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/joker.webp">
+						<h2>Joker IPA</h2>
+						<kbd>5.0%</kbd>
+						<hr>
+						<p>Joker IPA was created from a complex layer of malts and blended hops, this well balanced IPA delivers satisfaction every time.</p>
+						<hr>
+						<h4>£1.69</h4>
+					</div>	
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/dennis.webp">
+						<h2>Dennis Hopp'r</h2>
+						<kbd>5.3%</kbd>
+						<hr>
+						<p>What is your favourite Dennis Hopper movie? Anyway back to the beer! A gentle flavour of light and fruity hops and a good balance of malt. Very pleasant to drink.</p>
+						<hr>
+						<h4>£1.59</h4>
+					</div>
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/punk.webp">
+						<h2>Punk IPA</h2>
+						<kbd>5.6%</kbd>
+						<hr>
+						<p>Punk IPA is the beer that kick-started it. This light, golden classic has been subverted with new world hops to create an explosion of flavour.</p>
+						<hr>
+						<h4>£1.79</h4>
+					</div>																	
+				</div>	
+				<div class="row row-padding">
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/hazy-little-thing.png">
+						<h2>Hazy Little Thing</h2>
+						<kbd>6.7%</kbd>
+						<hr>
+						<p>Some beers need a little polishing before entering the world, while others—the hop-heavy, rowdy crowd-pleasers—should just be left alone. </p>
+						<hr>
+						<h4>£1.59</h4>
+					</div>	
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/can-o-bliss.png">
+						<h2>Can-O-Bliss</h2>
+						<kbd>7.2%</kbd>
+						<hr>
+						<p>Can-O-Bliss Hazy IPA is a hopped-up & hazed-out india pale ale. Just like Oskar Blues Brewery, this beer is unfiltered, uncommon and unrestrained.</p>
+						<hr>
+						<h4>£1.49</h4>
+					</div>	
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/centennial2.png">
+						<h2>Centennial</h2>
+						<kbd>7.2%</kbd>
+						<hr>
+						<p>Get ready to bask in the glory of the frothy head’s floral bouquet. Relish the citrus accents from the abundance of dry hopping.</p>
+						<hr>
+						<h4>£1.59</h4>
+					</div>
+					<div class="col-xl-3 col-md-6 text-center">
+						<img class="center-img col-sm-12" src="images/damn-yankee2.png">
+						<h2>Damn Yankee</h2>
+						<kbd>6.0%</kbd>
+						<hr>
+						<p>Damn Yankee is one of a kind. This tasty, pale ale classic has been brewed with perfection to create an refreshing taste for the consumer.</p>
+						<hr>
+						<h4>£1.79</h4>
+					</div>																	
+				</div>						
+			</div>
+		</section>
+		<!--Ales end !-->
+
+		<!-- Amenities start !-->
+		<section id="amenities">
+			<div class="col text-center">
+				<div class="pt-5">
+					<h1 class="center-stuff">Amenities</h1>
+					<hr>
+					<br>
+				</div>
+				<div class="card-columns col-12 col-xl-8 m-auto pb-5">	
+					<div class="card" id="music-card">
+						<div class="card-body text-center d-flex justify-content-center">
+							<i class="fa fa-music fa-5x"></i>						
+						</div>
+						<div class="card-footer">
+							<h2>Music</h2>
+							<p id="music-info">Live music throughout the week. Bands, DJ's and karoke! We also have a free to use retro jukebox. Come down and show us your best song.</p>
+						</div>
+					</div>
+					<div class="card" id="food-card">
+						<div class="card-body text-center d-flex justify-content-center">
+							<i class="fas fa-hamburger fa-5x"></i>					
+						</div>
+						<div class="card-footer">
+							<h2>Food</h2>
+							<p id="food-info">Feeling peckish? Fast food served every day of the week from open till close. Dine in or outside in our heated outdoor dining shelter.</p>
+						</div>
+					</div>							
+					<div class="card" id="games-card">
+						<div class="card-body text-center d-flex justify-content-center">
+							<i class="icon-size fas fa-gamepad fa-5x"></i>					
+						</div>
+						<div class="card-footer">
+							<h2>Games</h2>
+							<p id="games-info">A range of games machines and consoles. From House Of The Dead shoot em ups to FIFA20 and then all the way back to Mrs Pacman.</p>
+						</div>
+					</div>	
+					<div class="card" id="wifi-card">
+						<div class="card-body text-center d-flex justify-content-center">
+							<i class="fa fa-wifi fa-5x"></i>					
+						</div>
+						<div class="card-footer">
+							<h2>Free WiFi</h2>
+							<p id="wifi-info">Free high speed WiFi for all our customers. The code is changed daily, so just ask whoever is pulling your pint for the code!</p>
+						</div>
+					</div>
+					<div class="card" id="comedy-card">
+						<div class="card-body text-center d-flex justify-content-center">
+							<i class="fas fa-theater-masks fa-5x"></i>				
+						</div>
+						<div class="card-footer">
+							<h2>Comedy</h2>
+							<p id="comedy-info">Stand up comedy evnets hosted regularly, mostly weeekends. Please see in store for schedule and further details. Free craft ale with every ticket.</p>
+						</div>
+					</div>						
+					<div class="card" id="parking-card">
+						<div class="card-body text-center d-flex justify-content-center">
+							<i class="fas fa-parking fa-5x"></i>					
+						</div>
+						<div class="card-footer">
+							<h2>Parking</h2>
+							<p id="parking-info">Free parking for all our customers. May we politly remind you not to drink and drive. To provent this our staff can book you a taxi, just ask.</p>
+						</div>
+					</div>																							
+				</div>
+			</div>
+		</section>
+		<!-- Amenities end !-->
+
+		<!-- Opening hours start !-->
+		<section id="opening-hours">
+			<div class="jumbotron">
+				<h1 class="center-stuff mb-3">Opening Hours</h1>
+				<br>
+				<table class="table table-borderless col-md-6 col-lg-4 text-center">
+
+				    <thead>
+				      <tr>
+				        <th>Day</th>
+				        <th>Opening</th>
+				        <th>Closing</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>Monday</td>
+				        <td>11:00am</tdstyle="border: 1px solid red;">
+				        <td>11:30pm</td>
+				      </tr>
+				      <tr>
+				        <td>Tuesday</td>
+				        <td>11:00am</td>
+				        <td>11:30pm</td>
+				      </tr>
+				      <tr>
+				        <td>Wednesday</td>
+				        <td>11:00am</td>
+				        <td>11:30pm</td>
+				      </tr>
+				      <tr>
+				        <td>Thursday</td>
+				        <td>11:00am</td>
+				        <td>11:30pm</td>
+				      </tr>
+				      <tr>
+				        <td>Friday</td>
+				        <td>11:00am</td>
+				        <td>01:00am</td>
+				      </tr>	
+				      <tr>
+				        <td>Saturday</td>
+				        <td>11:00am</td>
+				        <td>01:00am</td>
+				      </tr>	
+				      <tr>
+				        <td>Sunday</td>
+				        <td>11:00am</td>
+				        <td>11:30am</td>
+				      </tr>					      				  			      				      
+				    </tbody>
+				</table>
+			</div>
+		</section>	
+		<!-- Opening hours end !-->
+
+		<!-- Reviews start !-->
+		<section id="reviews" class="pt-5 pb-5">
+				<img src="images/prof-1.jpg" class="rounded-circle media-img m-auto align-self-center mobile-img">
+				<div class="media border p-3 center-stuff col-12 col-xl-8 mt-3 mb-5">
+					<img src="images/prof-1.jpg" class="rounded-circle media-img mt-2 align-self-center desktop-img">
+					<div class="media-body col-md-8 center-stuff">
+						<h4 class="mt-3">Stan Dutton <small><i>In Store Review on November 11, 2019</i></small></h4>
+						<blockquote>
+							<p class="mb-3">"Ale on point. Free retro games consoles playable open till close, can't get enough!" "Ale on point. Free retro games consoles playable open till close, can't get enough!" "Ale on point. Free retro games consoles playable open till close, can't get enough!" "Ale on point. Free retro games consoles playable open till close, can't get enough!""Ale on point. Free retro games consoles playable open till close, can't get enough!"</p>
+						</blockquote>
+						<p class="center-stuff">Customer Rating</p>
+						<div class="col-12 center-stuff mb-3">
+							<div>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="images/prof-2.jpg" class="rounded-circle media-img m-auto align-self-center mobile-img">
+				<div class="media border p-3 mt-3 mb-5 center-stuff col-12 col-xl-8">
+					<img src="images/prof-2.jpg" class="rounded-circle media-img mt-2 align-self-center desktop-img">
+					<div class="media-body col-md-8 center-stuff">	
+						<h4 class="mt-3">Jamie Harding <small><i>In Store Review on October 24, 2019</i></small></h4>
+						<blockquote>
+							<p class="mb-3">"We came down for my Birthday. We could choose from the a wide variety of modern street foods and modern IPA's. Everyone enjoyed their meals, I would definitely recommend the LA Tower Burger. The staff were attentive, friendly and helpful. When we sat down we were kindly talked through the menu and how service opperates. Will be going down again for sure.</p>
+						</blockquote>
+						<p class="center-stuff">Customer Rating</p>
+						<div class="col-6 center-stuff mb-3">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+				</div>
+				<img src="images/prof-3.jpg" class="rounded-circle media-img m-auto align-self-center mobile-img">
+				<div class="media border p-3 mt-3 center-stuff col-12 col-xl-8">
+					<img src="images/prof-3.jpg" class="rounded-circle media-img mt-2 align-self-center desktop-img">
+					<div class="media-body col-md-8 center-stuff">
+						<h4 class="mt-3">Steven Smith <small><i>In Store Review on October 18, 2019</i></small></h4>
+						<blockquote>
+							<p class="mb-3">"We turned up spontaniously as we were on holiday in the area. What can i say, the place is lovely. Nicely done out on the inside with great entertainment, food and drink. The staff seemed to know lots of the customers - not sure if they are regulars are friends. Either way a polite bunch and a friendly atmosphere!</p>
+						</blockquote>
+						<p class="center-stuff">Customer Rating</p>
+						<div class="col-6 center-stuff mb-3">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+				</div>					
+		</section>
+		<!-- Reviews end !-->
+
+		<!-- Location start !-->
+		<section id="location">
+			<div class="jumbotron center-stuff">
+				<h1>FIND US</h1>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.126835174791!2d-1.5812725838692685!3d53.822819380081754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487959483079676d%3A0x7db9311107553473!2sAle%20House%20Arcadia!5e0!3m2!1sen!2suk!4v1575653370096!5m2!1sen!2suk" 
+				allowfullscreen=""
+				frameBorder="0">
+				</iframe>
+			</div>
+		</section>
+		<!-- Location end !-->		
+
+		<!-- Contact start !-->
+		<section id="contact" class="pb-5 pt-5">
+			<div class="container col-12 col-md-6">
+				<h1 class="center-stuff pb-3">Contact Us</h1>
+				<form action="#">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input class="form-control" type="text" id="name">
+					</div>
+					<div class="form-group">
+						<label for="name">E-Mail:</label>
+						<input class="form-control" type="email" id="email">
+					</div>
+					<div class="form-group">
+						<label for="comment">Message:</label>
+						<textarea class="form-control" rows="5" type="text" id="message"></textarea>
+					</div>	
+					<button type="button" class="btn btn-primary btn-block">Submit Message</button>				
+				</form>
+			</div>
+		</section>
+		<!-- Contact end !-->
+
+	<!-- Footer Sart !-->
+		<Section id=footer>
+			<div class="container-fluid">
+				<div class="row pt-3">
+					<hr class="footer-hr">
+					<div class="m-auto">
+						<a href="#" class="social-icons"><i class="fab fa-facebook-square fa-lg"></i></a>
+						<a href="#" class="social-icons"><i class="fab fa-twitter-square fa-lg"></i></a>
+						<a href="#" class="social-icons"><i class="fab fa-instagram fa-lg"></i></a>
+					</div>
+				</div>
+				<div class="row pt-3">
+						<div class="text-center col-md-4 m-auto">
+							<a class="footer-link" href=""><p>Contact</p></a>
+							<a class="footer-link" href=""><p>T&Cs</p></a>
+							<a class="footer-link" href=""><p>Alcohol Licence</p></a>
+							<a class="footer-link" href=""><p>Perform At The Ale House</p></a>
+						</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 mb-3">
+						<hr class="hrstyle1">
+						<h5 class="text-center bebas">ZNS DEV 2019 &copy; </h5>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- Footer Ends !-->
+</body>
+<script>
+	//jQuery is needed to enable to Bootstraps Tooltip class
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip();
+	});
+</script>
+</html>

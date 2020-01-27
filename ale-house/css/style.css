@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+html, body {
+	overflow-x: hidden;
+}
+/* Throughout CSS */
+.center-stuff{
+	text-align: center;
+	margin: auto;
+}
+
+.center-img{
+	margin: auto;
+	display: block;
+}
+
+.pb{
+	padding-bottom: 2rem;
+}
+
+h1{
+	font-family: 'Bebas Neue', cursive;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+/* Nav CSS */
+.logo{
+	width: 4rem;
+}
+
+li a {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+li a:hover {
+	color: #ff0;
+}
+
+nav{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5rem;
+}
+
+.nav-bg{
+	background-color: rgba(52, 52, 52, 0.9);
+	border-radius: 25px; 
+	padding-right: 2rem;
+}
+
+.nav-pad-left{
+	padding-left: 2rem;
+}
+/* Nav CSS */
+.navbar-toggler{
+	background-color: rgba(52, 52, 52, 0.9)!important;
+}
+
+/* Landing CSS*/
+
+.landing{
+	background-image: url("../images/ale-house.jpg");
+	height: 100vh;
+	width: 100%;
+	left: 0;
+	right: 0;
+	background-position: center;
+}
+
+.landing-content{
+	position: relative;
+	top: 25%;
+	text-align: center;
+}
+
+.landing-img{
+	width: 20rem;
+
+}
+
+.landing-content h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+	text-shadow: 2.5px 2.5px #000;
+	border-radius: 25px;
+	color: white;
+}
+
+/*.carousel-item img{
+	width: 100%;
+	height: 100%
+}
+
+.carousel-caption{
+	position: absolute;
+	top: 40%;
+	}
+
+.carousel-caption h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+	text-shadow: 2.5px 2.5px #000;
+	margin: 0 20rem 0 20rem;
+	border-radius: 25px;
+}
+
+.carousel-caption h4{
+	font-family: 'Bebas Neue', cursive;
+	padding: -1rem 0 1rem 0;	
+	margin: 0 20rem 0 20rem;
+	text-shadow: 2px 2px #000;
+}
+
+.carousel-item img{
+	opacity: .8;
+}*/
+
+/* Ales CSS */
+
+.jumbotron{
+	background: #fff!important;
+}
+
+.jumbotron div h1{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 6rem;
+}
+
+.jumbotron div h2{
+	font-family: 'Bebas Neue', cursive;
+}
+
+.jumbotron div h5{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2rem;
+}
+
+.img-size{
+	width: 360px;
+	height: 360px;
+}
+
+/* Amenities CSS */
+.card-body{
+	padding: 100px!important;
+}
+
+#music-info, #food-info, #games-info, #wifi-info, #comedy-info, #parking-info {
+	display: none;
+}
+
+#amenities{
+	background: #3a559f;
+	color: white;
+}
+
+#amenities h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+}
+
+#amenities h2{
+	font-family: 'Bebas Neue', cursive;
+	}
+
+#amenities hr{
+	border-top: 2px white solid;
+	width: 20%;
+}
+
+.card{
+	background:	#1d1d1d!important;
+	color: white!important;
+}
+
+.card-footer{
+	color: white!important;
+}
+/* Opening Hours CSS */
+#opening-hours h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+}
+
+table {
+	table-layout: fixed;
+}
+
+
+/* Review CSS*/
+#reviews{
+	background: #60909c;
+	color: white;
+}
+
+.fa-star, .fa-star-half-alt{
+	color: yellow;
+
+}
+
+.media-img{
+	width: 15rem;
+	margin-right: 5rem;
+}
+
+.desktop-img{
+	display: block;
+}
+
+.mobile-img{
+	display: none;
+}
+
+/* Location CSS */
+#location h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+}
+
+iframe{
+	width: 100vh;
+	height: 50vh;
+}
+
+/* Conact CSS */
+#contact{
+	background: #25274D;
+	color: white;
+}
+
+#contact h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+}
+/* Footer CSS */
+#footer{
+	font-family: 'Cairo', sans-serif;
+	background: #25274D;
+	color: white;
+}
+
+.footer-hr{
+	width: 98%;
+	border-top: 1px black solid;
+}
+
+.hrstyle1{
+	border-top: 1px black solid;
+}
+
+.footer-link, .social-icons{
+	text-decoration: none;
+	color: white;
+}
+
+.footer-link:hover, .social-icons:hover{
+	text-decoration: none;
+	color: #b7bfc2;
+}
+
+.fa-instagram:hover{
+	color: #ff41c7!important;
+}
+.fa-twitter-square:hover{
+	color: #1dabdd!important;
+}
+
+.fa-facebook-square:hover{
+	color: #3a559f!important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 577px) { 
+	/*nav-css*/
+	.mobile-pad{
+		padding-left: 2rem;
+	}
+
+	nav{
+		background-color: rgba(52, 52, 52, 0.9);
+	}
+
+	.nav-bg{
+		border-radius: 0px; 
+		background-color: rgba(52, 52, 52, 0);
+	}
+
+	/*landing css */
+	.landing-content{
+		top: 30%;
+	}
+
+	.landing-img{
+		width: 13rem;
+
+	}
+
+	.landing-content h1{
+		font-size: 4rem;
+	}
+
+	.media-img{
+		display: block;
+	}
+	/*ales css*/
+	.jumbotron div h1{
+		font-size: 3rem;
+	}
+
+	.jumbotron div h5{
+		font-size: 1.5rem;
+	}
+
+	/*amenities css*/
+
+	/*review css*/
+	.desktop-img{
+		display: none;
+	}
+
+	.mobile-img{
+		display: block;
+	}
+
+	iframe{
+	width: 90%;
+	height: 50%;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 769px) { 
+	/*find us css*/
+	iframe{
+	width: 90%;
+	height: 50%;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 993px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1201px) {
+	/*landing css */
+	.landing-content{
+		top: 35%;
+	}
+
+	/*amenities css*/
+	#music-info, #food-info, #games-info, #wifi-info, #comedy-info, #parking-info {
+		display: inline-block;
+	}
+	/*find us css*/
+	iframe{
+	width: 90%;
+	height: 50%;
+}
+
+}
+
+/*
+!--- Bootstrap screen response sizes ---!
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+*/
