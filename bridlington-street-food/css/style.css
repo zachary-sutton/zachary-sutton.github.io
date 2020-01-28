@@ -84,6 +84,11 @@
 
 	#nav{
 		background:rgba(0, 0, 0, .3); /*#2c3e50;*/
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
 
 	}
 
@@ -101,6 +106,10 @@
 	.landing-wrap{
 		height: 100%;
 		width: 100%;
+		background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/landing.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	.landing-wrap img{
@@ -415,12 +424,16 @@
 		overflow-x: hidden;
 	}
 
-	#home{
-		display: none;
-	}
-
 	.navbar{
 		background: #212529;
+	}
+
+	.landing-wrap h1{
+		font-size: 3rem;
+	}
+
+	.landing-wrap h1 + h4{
+		font-size: 1.5rem;
 	}
 
 	#about{
@@ -442,6 +455,10 @@
 
 	.navbar img{
 		height: 3.5rem;
+	}
+
+	.about-heading{
+		display: none;
 	}
 
 	.cuisines-heading{
