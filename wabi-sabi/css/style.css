@@ -50,11 +50,14 @@ nav ul li a:hover{
 	padding: 0;
 }
 
+/* SNAPS */
 .snap-img{
 	height: auto!important;
+	margin:auto!important;
+	width: 100%!important; 
+	max-width: 100%!important; 
+	height: auto!important;
 }
-
-/* SNAPS */
 /* MEDIA */
 /* SOUNDCLOUD */
 .soundcloud, .spotify, .fb, .instagram, .twitter {
