@@ -207,6 +207,48 @@ hr.hrskills{
 
 }
 
+.project4{
+	background: url(../img/ellies-cupboard.png);
+	border: 1px solid black;
+	background-position: center;
+	height: 30vh;
+	background-size: 400px;
+	background-position: center;
+}
+
+.project4:hover{
+	background-size: 600px;
+
+}
+
+.project5{
+	background: url(../img/wabi-sabi.png);
+	border: 1px solid black;
+	background-position: center;
+	height: 30vh;
+	background-size: 400px;
+	background-position: center;
+}
+
+.project5:hover{
+	background-size: 600px;
+
+}
+
+.project6{
+	background: url(../img/bridcast.png);
+	border: 1px solid black;
+	background-position: center;
+	height: 30vh;
+	background-size: 400px;
+	background-position: center;
+}
+
+.project6:hover{
+	background-size: 600px;
+
+}
+
 .div-link{ 
   position:absolute; 
   width:100%;
