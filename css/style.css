@@ -84,8 +84,6 @@ nav ul li a:hover{
 
 #about div div p{
 	margin-bottom: 0px !important;
-	font-style: italic;
-
 }
 
 #about div div p b{
@@ -173,6 +171,7 @@ hr.hrskills{
 	height: 30vh;
 	background-size: 400px;
 	background-position: center;
+	border-right: 0px!important;
 }
 
 .project1:hover{
@@ -186,6 +185,7 @@ hr.hrskills{
 	height: 30vh;
 	background-size: 400px;
 	background-position: center;
+	border: 1px solid black;
 }
 
 .project2:hover{
@@ -200,6 +200,7 @@ hr.hrskills{
 	height: 30vh;
 	background-size: 400px;
 	background-position: center;
+	border-left: 0px!important;
 }
 
 .project3:hover{
@@ -214,6 +215,8 @@ hr.hrskills{
 	height: 30vh;
 	background-size: 400px;
 	background-position: center;
+	border-bottom: 0!important;
+	border-right: 0!important;
 }
 
 .project4:hover{
@@ -222,12 +225,13 @@ hr.hrskills{
 }
 
 .project5{
-	background: url(../img/wabi-sabi.png);
+	background: url(../img/lawless.png);
 	border: 1px solid black;
 	background-position: center;
 	height: 30vh;
 	background-size: 400px;
 	background-position: center;
+	border-bottom: 0!important;
 }
 
 .project5:hover{
@@ -242,6 +246,8 @@ hr.hrskills{
 	height: 30vh;
 	background-size: 400px;
 	background-position: center;
+	border-bottom: 0!important;
+	border-left: 0!important;
 }
 
 .project6:hover{
