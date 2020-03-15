@@ -138,6 +138,35 @@ hr.hrskills{
 	width: 15%;
 }
 
+/* UI DESIGNS */
+#ui div h2{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+}
+
+.ui1{
+	background: url(../img/ecommerce.png);
+	border: 1px solid black;
+	background-position: center;
+	height: 30vh;
+	background-size: 400px;
+	background-position: center;
+	border-right: 0px!important;
+}
+
+.ui1:hover{
+	background-size: 600px;
+
+}
+
+#ui div h3{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2.5rem;
+	color: white;
+	background: black;
+
+}
+
 /* PROJECTS */
 #projects div h2{
 	font-family: 'Bebas Neue', cursive;
